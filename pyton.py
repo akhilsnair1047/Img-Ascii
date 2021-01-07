@@ -8,5 +8,13 @@ target_path = 'output_image.text'
 #call the method
 kt.image_to_ascii_art(source_path, target_path)
 
+#to show the content of the file in terminal
+f = open('output_image.text', 'r')
+file_contents = f.read()
+print (file_contents)
+f.close()
+
+
+
 #display
-print("Images to ASCII art!")
+print("Images to ASCII art Saved to PC as : "+ target_path)
